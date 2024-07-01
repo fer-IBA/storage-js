@@ -1,21 +1,21 @@
+"use strict";
 
 const modal = document.querySelector(".modal-overly");
-
+    
 const definirIdioma = ()=>{
     document.querySelector(".en").addEventListener("click",()=>{
-        localStorage.setItem("idioma","en")
+        localStorage.setItem("idioma","en");
         cerrarModal()
     })
     document.querySelector(".es").addEventListener("click",()=>{
-        localStorage.setItem("idioma","es")
+        localStorage.setItem("idioma","es");
         cerrarModal()
     })
 }
 
 const cerrarModal = ()=>{
-    
     modal.style.animation = "desaparecer 1s forwards";
-    setTimeout(()=>modal.style.display = "none",1000)
+    setTimeout(()=>modal.style.display = "none",1000);
 
 }
 
@@ -26,3 +26,4 @@ else {
     console.log(`idioma: ${idioma}`);
     modal.style.display = "none";
 }
+
