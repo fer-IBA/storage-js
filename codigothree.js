@@ -1,6 +1,6 @@
 "use strict";
 
-const modal = document.querySelector(".modal-overly");
+const modal = document.querySelector(".modal-overlay");
     
 const definirIdioma = ()=>{
     document.querySelector(".en").addEventListener("click",()=>{
